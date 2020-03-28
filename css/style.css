@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn .btn-dark {
+    color: #fff;
+}
+.btn-outline-secondary {
+    /* background-color: transparent !important; */
+    /* border-color: #011627 !important; */
+    color: #011627;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary:before {
+    content: '';
+    position: absolute;
+    background-color: #83f3ed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover::before {
+    width: 100%;
+}
+
+/* .btn-secondary {
+    background: #011627 !important;
+    border-radius: 0;
+    border-color: #011627 !important;
+} */
+
+/* .btn-info {
+    background: #83f3ed !important;
+    border-radius: 0;
+    border-color: #83f3ed !important;
+    color: #011627 !important;
+} */
+
+/* .btn-info:before {
+    background: #011627 !important;
+    color: #83f3ed;
+} */
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-link, .navbar-brand {
+    color: #011627;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: rgb(13, 218, 245);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+/* Call to action */
+.call-to-action {
+    background: #011627;
+    color: #fafafa;
+}
+
+.heading-line {
+    height: 3px;
+    width: 10%;
+    background: #83f3ed;
+}
+
+/* Services */
+.services .fa {
+    color: #83f3ed;
+}
+
+.dark {
+ color: #83f3ed;
+ background: #011627;
+}
+
+.dark i {
+    font-size: 1.3rem;
+    color: #83f3ed;
+    height: 300px;
+}
+
+.portfolio .img-fluid{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .col-lg-3{
+    position: relative;
+}
+
+.filter {
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: 100%; */
+    background: #83f3ed;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.gmap_canvas iframe {
+    width: 450px;
+    height: 400px;
+}
+
+/* Footer */
+.footer {
+    color: #fafafa;
+    background: #011627;
+}
+
+.footer a {
+    color: #fafafa;
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar .nav-item {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+     /* .call-to-action .container {
+        width: 100% !important;
+    } */
+    
+    .gmap_canvas iframe {
+        width: 300px;
+        height: 450px;
+    }
+}  
